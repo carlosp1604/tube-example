@@ -1,0 +1,8 @@
+.sorting-menu-dropdown {
+  &__container {
+    @apply invisible;
+    &_visible {
+      @apply visible text-base-300;
+    }
+  }
+}

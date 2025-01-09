@@ -1,0 +1,15 @@
+.app-banner {
+  &__container {
+    @apply container p-5 border-t-2 border-brand-primary-light/50
+    mx-auto text-center cursor-default;
+  }
+
+  &__title {
+    @apply text-base-400 font-black mb-2;
+  }
+
+  &__description {
+    @apply text-base-500 leading-tight
+    whitespace-pre-line;
+  }
+}

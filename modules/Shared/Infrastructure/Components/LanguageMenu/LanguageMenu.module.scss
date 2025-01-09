@@ -1,0 +1,13 @@
+.language-menu {
+  &__container {
+    @apply flex flex-col gap-y-4 p-5 pt-5 overflow-hidden;
+  }
+
+  &__menu-options-container {
+    @apply -mx-5 overflow-y-scroll scrollbar-hide;
+  }
+
+  &__option-image {
+    @apply h-full w-full object-contain object-center;
+  }
+}

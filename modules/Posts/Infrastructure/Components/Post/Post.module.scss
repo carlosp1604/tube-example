@@ -1,0 +1,51 @@
+.post {
+  &__container {
+    @apply container flex flex-col gap-y-4 mx-auto
+    pt-5 px-5 w-full overflow-hidden pb-5;
+  }
+
+  &__post-with-ads {
+    @apply flex flex-col gap-y-4;
+
+    @screen lg {
+      @apply flex flex-row gap-x-4 justify-between;
+    }
+  }
+
+  &__left-container {
+    @apply flex flex-col gap-y-4 flex-grow;
+
+    @screen lg {
+      @apply overflow-hidden;
+    }
+  }
+
+  &__right-container {
+    @apply flex flex-row gap-x-1 gap-y-0.5
+    flex-wrap justify-center items-center m-1;
+
+    @screen lg {
+      @apply flex-col justify-start;
+    }
+  }
+
+  &__right-container-item {
+    @apply flex items-center self-center;
+  }
+
+  &__right-container-item-hidden-mobile {
+    @apply hidden;
+
+    @screen md {
+      @apply block;
+    }
+  }
+
+  &__right-container-item-hidden-md {
+    @apply hidden;
+
+    @screen lg {
+      @apply block;
+    }
+  }
+}

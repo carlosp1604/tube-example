@@ -1,0 +1,25 @@
+.post-comment-list {
+  &__container {
+    @apply flex flex-col gap-y-4 bg-body;
+
+    &_loading {
+      @apply animate-pulse;
+    }
+  }
+
+  &__post-comment-container {
+    @apply border-b border-base-800;
+
+    &:last-of-type {
+      @apply border-0;
+    }
+  }
+
+  &__post-comment-skeleton-container {
+    @apply border-b border-base-800 pb-2;
+
+    &:last-of-type {
+      @apply border-0;
+    }
+  }
+}

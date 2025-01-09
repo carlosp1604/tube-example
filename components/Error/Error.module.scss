@@ -1,0 +1,44 @@
+.error {
+  &__container {
+    @apply container flex flex-col gap-y-10 items-center
+      justify-center rounded-lg text-base-300
+      min-h-screen px-5;
+
+    @screen md {
+      @apply flex flex-row -mt-14;
+    }
+  }
+
+  &__image {
+    @apply w-full h-auto max-w-lg;
+
+    @screen md {
+      @apply max-w-md;
+    }
+
+    @screen lg {
+      @apply max-w-lg;
+    }
+  }
+
+  &__message-container {
+    @apply flex flex-col gap-y-4 items-center justify-center;
+  }
+
+  &__title {
+    @apply text-3xl font-black uppercase text-center;
+
+    @screen md {
+      @apply text-4xl;
+    }
+
+    @screen lg {
+      @apply text-5xl;
+    }
+  }
+
+  &__subtitle {
+    @apply font-light font-sans text-base normal-case whitespace-pre-line
+      text-center;
+  }
+}

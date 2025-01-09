@@ -1,0 +1,87 @@
+.video-post-player {
+  &__container {
+    @apply h-full w-full overflow-hidden relative;
+  }
+
+  &__iframe {
+    @apply z-video-player w-full h-full overflow-hidden;
+
+    @screen tb {
+      @apply rounded-lg;
+    }
+  }
+
+  &__sourcesMenuContainer {
+    @apply flex flex-col gap-y-2 p-4 pb-1 h-full w-full absolute
+    top-0 right-0 translate-y-1/2 bg-body/90 z-video-player-options
+    opacity-0 pointer-events-none transition;
+
+    @screen md {
+      @apply p-10 pb-4 gap-y-8;
+    }
+
+    &__visible {
+      @apply opacity-100 pointer-events-auto transition
+      translate-y-0 duration-300;
+    }
+  }
+
+  &__sourcesMenuCloseButton {
+    @apply absolute top-1 right-1 z-video-player-options;
+
+    @screen md {
+      @apply top-2 right-2;
+    }
+  }
+
+  &__sourcesMenuList {
+    @apply grid gap-2 overflow-y-scroll scrollbar-hide
+    justify-center mx-auto;
+    grid-template-columns: repeat(2, 1fr);
+
+    @screen tb {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @screen md {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @screen xl {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__sourceOption {
+    @apply flex flex-col gap-y-1 items-center
+    justify-center rounded-lg p-1 px-4 border-2
+    font-bold transition-colors leading-none
+    border-white text-white;
+
+    &:hover {
+      @apply border-brand-primary-light bg-brand-primary-bg/20 transition-colors;
+    }
+
+    &__selected {
+      @apply border-brand-primary-dark bg-brand-primary-bg/50
+      transition-colors pointer-events-none;
+    }
+  }
+
+  &__sourceOptionImageWrapper {
+    @apply w-10 max-h-10 min-h-10 h-full
+    overflow-hidden;
+
+    @screen md {
+      @apply min-h-14 max-h-14 w-14;
+    }
+
+    @screen lg {
+      @apply min-h-16 max-h-16 w-16;
+    }
+  }
+
+  &__sourceOptionImage {
+    @apply h-full w-full object-contain overflow-hidden;
+  }
+}

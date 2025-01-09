@@ -1,0 +1,5 @@
+.post-card-gallery-options {
+  &__container {
+    @apply flex flex-col gap-y-4 py-5;
+  }
+}

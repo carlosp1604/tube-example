@@ -1,0 +1,9 @@
+{
+  "action_cannot_be_performed_error_message": "No puedes hacer esto ahora, espera a que termine la operación actual",
+  "clear_search_button_title": "Limpiar búsqueda",
+  "dislike_reaction_active_title_button": "Eliminar reacción",
+  "dislike_reaction_title_button": "No me gusta",
+  "like_reaction_active_title_button": "Eliminar reacción",
+  "like_reaction_title_button": "Me gusta",
+  "user_new_login_help_message_title": "Si anteriormente creaste una cuenta con Google solo tienes que hacer click en 'Olvidé mi contraseña' para generar una contraseña para tu usuario"
+}

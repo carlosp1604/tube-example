@@ -1,0 +1,25 @@
+.app {
+  &__layout {
+    @apply font-roboto;
+  }
+
+  &__main-layout {
+    @apply font-roboto;
+
+    @screen lg {
+      @apply ml-[74px];
+
+      &__open {
+        @apply ml-40;
+      }
+    }
+  }
+
+  &__container {
+    @apply min-h-screen mt-14;
+  }
+
+  &__embed-container {
+    @apply grid min-h-screen bg-black;
+  }
+}
