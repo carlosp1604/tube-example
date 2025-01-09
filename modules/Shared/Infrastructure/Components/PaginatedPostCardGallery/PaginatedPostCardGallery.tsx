@@ -311,7 +311,6 @@ export const PaginatedPostCardGallery: FC<Partial<Props> & Omit<Props,
         postCardOptions={ parsePosCardOptions(paginatedPostCardGalleryPostCardOptions) }
         loading={ loading }
         emptyState={ emptyState }
-        showAds={ true }
       />
       <PaginationBar
         pageNumber={ paginationState.page }
