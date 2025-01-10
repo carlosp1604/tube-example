@@ -189,7 +189,7 @@ export class User {
 
     return new VerificationToken(
       crypto.randomUUID(),
-      '12345678',
+      12345678,
       this.email,
       type,
       nowDate.plus({ minute: 30 }),
