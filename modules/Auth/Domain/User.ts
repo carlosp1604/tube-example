@@ -189,7 +189,7 @@ export class User {
 
     return new VerificationToken(
       crypto.randomUUID(),
-      12345678,
+      '12345678',
       this.email,
       type,
       nowDate.plus({ minute: 30 }),
@@ -198,14 +198,14 @@ export class User {
   }
 
   public static buildVerificationTokenForAccountCreation (email: User['email']): VerificationToken {
-    const cryptoService = container.resolve<CryptoServiceInterface>('cryptoService')
+    // const cryptoService = container.resolve<CryptoServiceInterface>('cryptoService')
 
     const nowDate = DateTime.now()
 
     try {
       return new VerificationToken(
         crypto.randomUUID(),
-        cryptoService.randomNumericCode(),
+        '12345678',
         email,
         VerificationTokenType.CREATE_ACCOUNT,
         nowDate.plus({ minute: 30 }),
